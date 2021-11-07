@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="../static/css/style.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="main__title">
+        <h2>욕설 및 혐오표현 분류기</h2>
+      </div>
+      <div class="main__container">
+        <div class="main__text-container">
+          <form action="/predict" method="post">
+            <textarea
+              name="text"
+              id="text_box"
+              placeholder="문장을 입력하세요."
+              cols="30"
+              rows="10"
+            >
+{{inputText}}</textarea
+            >
+            <button class="predict_btn">예측하기</button>
+          </form>
+        </div>
+        <div class="main__text-container">
+          {% if prediction %}
+          <div>Default : {{prediction.Default}}</div>
+          <div>Offensive : {{prediction.Offensive}}</div>
+          <div>Hate : {{prediction.Hate}}</div>
+          <hr />
+          <div class="text-category">{{prediction.Category}}</div>
+          {% endif %}
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

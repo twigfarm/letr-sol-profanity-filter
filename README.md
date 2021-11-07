@@ -143,6 +143,17 @@ Tesla V100 GPU를 이용하여 약 20일동안 진행했고, 현재 Huggigface�
 | Soongsil-BERT     | 370M  |      **91.2**      |           -            |         -          |          -           |            76             |             94              |               -               |                **69**                 |
 | KSL-BERT          | 419M  |       89.24        |           -            |         -          |          -           |             -             |              -              |               -               |                 67.30                 |
 
+## Demo
+
+### How to use
+
+```shell
+$ cd demo
+$ python main.py
+```
+
+![화면 기록 2021-11-07 오후 11 02 53](https://user-images.githubusercontent.com/51789449/140648323-9d7f4a22-732a-407d-a23b-7a5518573ef5.gif)
+
 ## Reference
 
 ### Github Repos
