@@ -148,6 +148,8 @@ Tesla V100 GPU를 이용하여 약 20일동안 진행했고, 현재 Huggigface�
 ### How to use
 
 ```shell
+$ git clone https://github.com/twigfarm/letr-sol-profanity-filter.git
+$ pip install -r requirements.txt
 $ cd demo
 $ python main.py
 ```
